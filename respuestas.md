@@ -47,3 +47,24 @@ SELECT
 FROM products
 WHERE discontinued = 0 
   AND units_in_stock <= reorder_level;
+
+  ## Pregunta 4 – Ficha completa de producto
+
+**Enunciado:** Para los productos suministrados por empresas de Italia, Francia o España, muestra el nombre del producto, el nombre de la categoría, el nombre del proveedor, su país y su ciudad. Ordena por país y, dentro de cada país, por nombre de producto.
+
+**Consulta:**
+
+```sql
+SELECT 
+    p.product_name AS producto,
+    c.category_name AS categoria,
+    s.company_name AS proveedor,
+    s.country AS pais,
+    s.city AS ciudad
+FROM products AS p
+INNER JOIN categories AS c 
+    ON c.category_id = p.category_id
+INNER JOIN suppliers AS s 
+    ON s.supplier_id = p.supplier_id
+WHERE s.country IN ('Italy', 'France', 'Spain')
+ORDER BY pais, producto;

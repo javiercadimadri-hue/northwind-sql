@@ -1,10 +1,10 @@
 # Práctica de Modelado y Consultas SQL - Northwind
 
-**Autor:** Javier Abadia Alfaro
+**Autor:** Javier Abadia Alfaro  
 **Entorno de desarrollo:**
-* Servidor: PostgreSQL 18
-* Cliente: pgAdmin 4
-* Base de Datos: Northwind (UTF-8)
+* **Servidor:** PostgreSQL 18
+* **Cliente:** pgAdmin 4
+* **Base de Datos:** Northwind (UTF-8)
 
 ---
 
@@ -13,13 +13,8 @@ Este repositorio contiene la resolución práctica sobre la base de datos relaci
 
 ---
 
-## 2. Instrucciones de Instalación y Carga
+## 2. Documentación y Soluciones
 
-Para reproducir este entorno de trabajo desde cero:
+Para consultar el desarrollo detallado de las consultas SQL, captura de resultados y explicaciones técnicas de cada ejercicio, accede al documento principal de respuestas:
 
-1. **Creación de la Base de Datos:**
-   Conéctate a PostgreSQL mediante pgAdmin o psql y crea la base de datos forzando la codificación UTF-8:
-   ```sql
-   CREATE DATABASE northwind
-       WITH ENCODING = 'UTF8'
-            TEMPLATE = template0;
+* 📄 **[Ver Respuestas y Consultas SQL (respuestas.md)](respuestas.md)**
